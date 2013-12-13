@@ -1,0 +1,23 @@
+// [7/8/2010 陈军龙]
+#ifndef _CG_CGAskDetailMountListHandler_H_
+#define _CG_CGAskDetailMountListHandler_H_
+
+
+#include "Type.h"
+#include "Packet.h"
+#include "PacketFactory.h"
+#include "CGAskDetailMountList.h"
+
+namespace Packets
+{
+
+	class CGAskDetailMountListHandler
+	{
+	public:
+		static UINT	Execute( CGAskDetailMountList* pPacket, Player* pPlayer );
+	};
+}
+
+using namespace Packets;
+#endif
+
